@@ -5,9 +5,9 @@
 ## makeCacheMatrix has the cache of previous matrix inverses
 
 makeCacheMatrix <- function(x = matrix()) {
- ##initialize invmat to null
+  ##initialize invmat to null
   invmat <- NULL
- ##set function caches value
+  ##set function caches value
   set <- function(y=matrix()) {
     x <<- y
     ##changes invmat to null if there is a change in matrix
@@ -36,5 +36,6 @@ cacheSolve <- function(x, ...) {
   m <- solve(data, ...)
   x$setinverse(invmat)
   invmat
-        ## invmat is the inverse matrix
+  ## invmat is the inverse matrix
 }
+
